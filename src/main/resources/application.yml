@@ -1,2 +1,15 @@
 server:
   port: 9999
+
+app:
+  test: hello world
+  people:
+    -
+      firstName: suhael
+      lastName: akhtar
+    -
+      firstName: eesa
+      lastName: akhtar
+    -
+      firstName: ameera
+      lastName: akhtar
