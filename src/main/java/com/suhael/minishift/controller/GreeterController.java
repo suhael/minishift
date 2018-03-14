@@ -19,6 +19,6 @@ public class GreeterController {
             prefix = "Hello!";
         }
 
-        return String.format(greeterMessageFormat, prefix, user);
+        return prefix + greeterMessageFormat +    user;
     }
 }
