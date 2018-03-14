@@ -8,14 +8,14 @@ spec:
              configMapKeyRef:
                 name: minishift-configmaps
                 key: greeter.prefix
-          volumeMounts:
-          - name: application-config
-            mountPath: "/deployments/config"
-            readOnly: true
-      volumes:
-      - name: application-config
-        configMap:
-          name: spring-app-config
-          items:
-          - key: application.yml
-            path: application.yml
+#          volumeMounts:
+#          - name: application-config
+#            mountPath: "/deployments/config"
+#            readOnly: true
+#      volumes:
+#      - name: application-config
+#        configMap:
+#          name: spring-app-config
+#          items:
+#          - key: application.yml
+#            path: application.yml
