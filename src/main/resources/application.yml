@@ -1,6 +1,8 @@
 server:
   port: 9999
 
+greeter.message: %s %s! Spring Boot application.properties has been mounted as volume on Kubernetes!
+
 app:
   test: hello world
   people:
