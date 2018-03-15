@@ -1,7 +1,7 @@
 server:
   port: 9999
 
-greeter.message: This is reading from config map
+greeter.message: This is reading from config map - no need for fabric 8
 greeter.prefix: ${GREETING_PREFIX}
 
 app:
