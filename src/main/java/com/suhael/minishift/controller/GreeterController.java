@@ -11,9 +11,12 @@ public class GreeterController {
     @Value("${greeter.message}")
     private String greeterMessageFormat;
 
+    @Value("${greeter.prefix}")
+    private String greeterPrefix;
+
     @GetMapping("/greet/{user}")
     public String greet(@PathVariable("user") String user) {
-        String prefix = System.getenv().getOrDefault("GREETING_PREFIX", "Hi");
+        String prefix = greeterPrefix;
         System.out.printf("Prefix :{} and User:{}", prefix, user);
         if (prefix == null) {
             prefix = "Hello!";
