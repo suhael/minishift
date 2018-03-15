@@ -1,7 +1,7 @@
 server:
   port: 9999
 
-greeter.message: Spring Boot application.yml has been mounted as volume on Kubernetes!
+greeter.message: This is reading from config map
 greeter.prefix: ${GREETING_PREFIX}
 
 app:
